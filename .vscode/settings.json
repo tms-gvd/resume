@@ -1,0 +1,52 @@
+{
+    "latex-workshop.latex.tools": [
+        {
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ],
+            "env": {
+                "CHKTEX_DISABLE": "1"
+            }
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "xelatex (2 passes)",
+            "tools": [
+                "xelatex",
+                "xelatex"
+            ]
+        }
+    ],
+    "latex-workshop.latex.outDir": "%DIR%",
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux",
+        "*.log", 
+        "*.toc",
+        "*.out",
+        "*.nav",
+        "*.snm",
+        "*.vrb",
+        "*.synctex.gz"
+    ],
+    "latex-workshop.latex.autoClean.run": "onBuilt",
+    "latex-workshop.latex.clean.method": "glob",
+    "latex-workshop.latex.recipe.default": "first",
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    "latex-workshop.message.error.show": false,
+    "latex-workshop.message.warning.show": false,
+    // "editor.inlineSuggest.enabled": true,
+    "editor.quickSuggestions": {
+        "other": false,
+        "comments": false,
+        "strings": false
+    },
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.wordWrap": "on"
+}

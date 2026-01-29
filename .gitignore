@@ -1,0 +1,16 @@
+# PDF output (except the compiled resume)
+*.pdf
+!resume-ThomasGAVIARD.pdf
+
+# LaTeX auxiliary files
+*.aux
+*.log
+*.toc
+*.out
+*.nav
+*.snm
+*.vrb
+*.synctex.gz
+
+# macOS
+.DS_Store
